@@ -1,13 +1,15 @@
 body{
     display: flex;
     flex-direction:column;
+    
 }
 html{
     display: flex;
     justify-content: center;
-    background-color: bisque;
+    background-color: rgb(87, 24, 16);
     text-align: center;
-    text-decoration-color: dimgray;
+    color: #deddddfd;
+    text-shadow: #060202;
 }
 span{
     display: flex;
@@ -18,8 +20,14 @@ ul{
     display: flex;
     justify-content: space-between;
     padding: 0;
-    color: rgba(255, 0, 0, 0.581);
+    color: #808080;
     text-decoration: underline;
     list-style-type: none;
     font-size: 3rem;
+}
+h4{
+    font-style: italic;
+}
+#guess-button{
+    background-color: #808080;
 }
