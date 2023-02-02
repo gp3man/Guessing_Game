@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    flex-direction:column;
+}
+html{
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+    text-align: center;
+    text-decoration-color: dimgray;
+}
+span{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5rem;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    color: rgba(255, 0, 0, 0.581);
+    text-decoration: underline;
+    list-style-type: none;
+    font-size: 3rem;
+}
