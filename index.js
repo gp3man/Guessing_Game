@@ -13,26 +13,28 @@ console.log(correctAnswer)
     guessButton.addEventListener("click", function(){
         const currentGuess = numField.value;
         console.log(currentGuess)
-        while(guessCount >= livesStart){
-            if (guessCount==livesStart)
-            {
-                alert("Game over")
+        if (guessCount < livesStart){
+            if (currentGuess == correctAnswer) { 
+                alert("WINNER, WINNER, CHICKEN DINNER!!!!!!!"); 
             }
-            else if (currentGuess == correctAnswer){
-                alert("WINNER, WINNER, CHICKEN DINNER!!!!!!!")
-            }
-        } 
-        guessCount++
+            guessCount++;
+
+        //     if (guessCount == livesStart) {alert("Game over")
+        
+            
+        
         const passGuesses= document.createElement("li")
         passGuesses.textContent = currentGuess
         guessList.appendChild(passGuesses)
         guessesArr.push(currentGuess)
+        } else {
+            alert("I haven't seen a beatin' like that since somebody stuck a banana in my pants and turned a monkey loose.");
+        }
 
-        console.log(`You have "${livesStart-guessCount}" More Tries!`)
-        console.log("Tries You Made-"+ guessCount)
-        console.log(guessesArr)
-       
-})
+        console.log(`You have "${livesStart - guessCount}" More Tries!`)
+        console.log("Tries You Made-" + guessCount)
+        console.log(guessesArr) 
+});
 
 hintButton.addEventListener("click", function(){
     console.log("You Suck!!!!!!!!!!!!!!!")
